@@ -20,4 +20,6 @@ This is a personal portfolio website created to showcase my skills, projects, an
 ![C](https://github.com/user-attachments/assets/083c0a66-ee15-4ab8-a142-1426b20e8ac6)
 ![Capture](https://github.com/user-attachments/assets/8d213e6e-4ef0-4ea3-8274-83c8c40ba7a0)
 
+### my portfolio live visiting
+https://rahafnasad.github.io/MyPortfolio/#Skills
 
