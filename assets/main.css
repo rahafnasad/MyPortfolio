@@ -1,0 +1,656 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --FirstMainColor :#081c15 ;
+    --secondMainColor:#fefae0;
+    --thirdMainColor:#FFC42A;
+}
+::selection {
+    background-color: var(--secondMainColor);
+    color: var(--FirstMainColor);
+}
+body {
+    background-color: var(--secondMainColor);
+}
+.container {
+    margin: 15px 0;
+    padding: 15px 50px;
+    margin-top: 0;
+
+}
+/*Start Home Section CSS*/
+#mainPage {
+    background-color: var(--FirstMainColor);
+    height: 100vh;
+}
+#mainPage .logo {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+#mainPage .logo img {
+    width: 60px;
+    height: 60px;
+}
+#mainPage nav {
+    color: var(--secondMainColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mainPage nav li {
+    display: inline;
+    padding-left: 15px;
+    letter-spacing: 2px;
+
+}
+#mainPage nav span {
+    font-size: 25px;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#mainPage nav li a:hover,#mainPage nav a.active{
+    color: #74c69d;
+}
+#mainPage nav a.active{
+    padding: 5px;
+    border-bottom: 1px solid #74c69d;
+}
+#mainPage nav a {
+   text-decoration: none;
+   color: var(--secondMainColor);
+   transition: 0.3s;
+   opacity: 0;
+   animation: slideTop 0.5s ease forwards;
+   animation-delay:calc(.2s*var(--i)) ;
+
+}
+#mainPage .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+}
+#mainPage header {
+ color: var(--secondMainColor);
+width: 50%;
+}
+#mainPage .content p {
+   font-size: 23px;
+   font-family: "Raleway", sans-serif;
+text-align: center;
+
+
+
+}
+#typing{
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 50px;
+    align-items: center ;
+    color:#FFC42A;
+
+    animation: typing 1s ease-in-out infinite alternate;
+    animation-delay:0.7s ;
+    margin-top: 15px;
+    
+}
+#mainPage .content h1 {
+    font-size: 45px;
+    font-family: "Dosis", sans-serif;
+    margin: 20px 0;
+text-align: center;
+    
+ }
+  .resume{
+    text-align: center;
+ }
+.resume button {
+    background: linear-gradient(45deg, #fefae0, #f4c430, #dda15e);
+    border: none;
+   padding: 15px 50px;
+   border-radius: 10px;
+margin: 30px auto; 
+box-shadow: 0 0 10px #52b788;
+opacity: 0;
+animation: slideBottom 0.5s ease forwards;
+animation-delay:0.7s ;
+
+}
+
+.resume  button a {
+    text-decoration: none;
+    color: var(--FirstMainColor);
+    font-family: "Dosis", sans-serif;
+font-weight: 600;
+font-size: 16px;
+
+}
+
+#mainPage .image img {
+    animation: zoom 1s ease-in-out infinite alternate;
+animation-delay:0.7s ;
+}
+.resume button:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, #fff9c4, #e6a919, #c57a38);
+
+    color: var(--secondMainColor);
+}
+.social-media a{
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 22px;
+width: 35px;
+height: 35px;
+line-height: 35px;}
+
+.social-media {
+display: flex;
+flex-direction: column;
+width: 10%;
+position: fixed;
+left: 20px;}
+#gmail{
+    color: red;
+background-color: #d8f3dc;
+text-align: center;
+border-radius: 50%;
+box-shadow: 0 0 10px red;
+}
+#gmail:hover{
+    color: #d8f3dc;
+background-color: red;
+}
+#linkedin{
+    color: #d8f3dc;
+background-color: rgb(10, 102, 194);
+text-align: center;
+border-radius: 50%;
+box-shadow: 0 0 10px rgb(10, 102, 194);
+}
+#linkedin:hover{
+    color: rgb(10, 102, 194);
+background-color: #d8f3dc;
+}
+#github{
+    color: #d8f3dc;
+background-color: #333;
+text-align: center;
+border-radius: 50%;
+box-shadow: 0 0 5px #d8f3dc;
+}
+#github:hover{
+    color: #333;
+background-color: #d8f3dc;
+}
+#discord{
+    color: #d8f3dc;
+background-color: #5865F2;
+text-align: center;
+border-radius: 50%;
+box-shadow: 0 0 10px #5865F2;
+}
+#discord:hover{
+    color: #5865F2;
+background-color: #d8f3dc;
+}
+/* Keyframes Animation*/
+@keyframes slideRight {
+    0% {
+transform: translateX(-100px);
+opacity: 0;    }
+100% {
+    transform: translateX(0);
+    opacity: 1;    }
+}
+
+@keyframes slideTop {
+    0% {
+transform: translateY(100px);
+opacity: 0;    }
+100% {
+    transform: translateY(0);
+    opacity: 1;    }
+}
+@keyframes slideBottom {
+    0% {
+transform: translateY(100px);
+opacity: 0;    }
+100% {
+    transform: translateY(0);
+    opacity: 1;    }
+}
+@keyframes zoom {
+    0% {
+transform: translateY(-10px);
+    }
+100% {
+    transform: translateY(10);
+    }
+}
+
+@keyframes typing {
+    0% {
+        transform: translateX(-20px);
+            }
+        100% {
+            transform: translateX(20);
+            }
+}
+
+.about,.skills,.projects,.contact , footer{
+    background-color: var(--FirstMainColor);
+    margin-top: 1px;
+    color: var(--secondMainColor);
+    margin-bottom: 0;
+    overflow: hidden;
+}
+ .title{
+display: flex;
+justify-content: center;}
+
+ .title h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 2px;
+    width: fit-content;
+    letter-spacing: 3px;
+padding-bottom: 5px;
+border-bottom:1px solid var(--thirdMainColor) ;
+
+
+} 
+.about .detalis {
+    font-family: "Raleway", sans-serif;
+line-height: 30px;
+}
+.about .image img {
+    width: 100%;
+    margin-left: 30px;
+}
+.about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+}
+ 
+    
+    .AboutInContent span{
+color: var(--thirdMainColor);
+font-weight: 600;
+letter-spacing: 1px;
+    }
+    .AboutInContent {
+width: 70%;
+display: flex;
+margin-left: 30px;
+align-items:start;
+flex-direction: column;        
+    }
+.AboutInContent p{
+padding-bottom: 15px;
+margin-left: 30px;
+}
+
+.AboutInContent .list {
+    font-size: 12px;
+    color: #2d6a4f;
+    margin-right: 10px;
+    animation: IconColor 1s ease-in-out infinite alternate;
+    animation-delay:0.7s ;
+}
+
+@keyframes IconColor {
+    0% {
+        color: #1b4332;
+    }
+100% {
+    color: #40916c;
+    
+    }
+}
+.AboutInContent h3 {
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.AboutInContent .hand {
+    font-size: 20px ;
+    color: var(--thirdMainColor);
+}
+.skills p {
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Raleway", sans-serif;
+
+}
+.skillsWithLogo {
+    display: flex;
+}
+.logoSkills {
+    width:60px;
+    height: 60px;
+    margin-top: 15px;
+}
+.logoSkills:hover{
+    width:70px;
+    height: 70px;
+}
+.frontendSkills  , .bakendSkills ,.generalSkills {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+padding: 30px 20px;
+margin-bottom: 15px;
+margin-left: 20px;
+width: 30%;
+margin-top: 30px;
+}
+.frontendSkills p , .bakendSkills p,.generalSkills p {
+    color: var(--thirdMainColor);
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 10px ;
+    border-bottom: 1px solid var(--FirstMainColor);
+}
+#githubskills {
+    border-radius: 50%;
+}
+.Persantage {
+    position: relative;
+    width: 50%;
+}
+.Parsantege100{
+width: 100%;
+height: 3px;
+background-color: var(--secondMainColor);
+}
+.Parsantege95{
+    width: 90%;
+height: 3px;
+background-color: var(--thirdMainColor);
+}
+.allProjects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+}
+.skills h3,.projects h3 {
+    border-bottom: 1px solid var(--thirdMainColor);
+    padding-bottom: 5px;
+    font-family: "Dosis", sans-serif;
+font-size: 25px;
+letter-spacing: 1px;
+margin: 15px;
+width: fit-content;
+}
+.frontPersantage {
+    width: 40%;
+    text-align: center;
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    
+
+
+}
+.frontPersantage .item{
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.bar ,.frontPersantage .item{
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay:calc(.2s*var(--i)) ;
+}
+.bar{
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    margin-top: 15px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid var(--secondMainColor);
+
+}
+.bar::after{
+    content: '';
+    left: 0;
+    top: 0;
+    width: 95%;
+    height: 100%;
+    border-radius: 5px;
+
+
+    background-color: var(--thirdMainColor);
+    position: absolute;
+}
+.item[percentage="95%"]{
+    width: 95%;
+}
+.item[percentage="92%"]{
+    width: 92%;
+}
+.bar[percentage="92%"]::after{
+    width: 92%;
+}
+.item[percentage="82%"]{
+    width: 82%;
+}
+.bar[percentage="82%"]::after{
+    width: 82%;
+}
+
+.item[percentage="85%"]{
+    width: 85%;
+}
+.bar[percentage="85%"]::after{
+    width: 85%;
+}
+.item h4 {
+    font-family: "Raleway", sans-serif;
+
+}
+
+.TitleAndPercentage{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.percentageIcon{
+    color: var(--thirdMainColor);}
+
+    .project img {
+        width: 100%;
+        border: 15px solid var(--FirstMainColor);
+        box-shadow: 0 0 4px var(--secondMainColor);
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+.project{
+    position: relative;
+    width: 45%;
+}
+.project .overlay {
+    position: absolute;
+    opacity: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project:hover  .overlay{
+    content: '';
+    opacity: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 10px;
+transition: 0.5s;
+background-color: rgba(4, 14, 4, 0.8);
+border: 3px solid var(--secondMainColor);
+}
+.overlay h4{
+    color: var(--thirdMainColor);
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+
+}
+.overlay p{
+    color: var(--secondMainColor);
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    margin-top: 15px;
+
+}
+.ProjectIcon{
+    margin-top: 10px;
+    color: #000000;
+    background-color: #fff;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 13px var(--thirdMainColor);
+}
+.ProjectIcon:hover{
+    background-color: var(--thirdMainColor);
+}
+.titleProject{
+    margin-bottom: 30px;
+}
+.projectDetalis {
+    margin: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--secondMainColor);
+    font-family: "Raleway", sans-serif;
+
+}
+.contact {
+    padding-bottom: 30px;
+}
+.contentInContact {
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+
+}
+.form .name , .form .email , .form .message{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px ;
+
+
+}
+.form .name label , .form .email label , .form .message label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.form {
+width: 40%;
+border-radius: 10px;
+padding: 20px 0;
+border: 1px solid var(--secondMainColor);
+box-shadow: 0 0 10px var(--thirdMainColor);
+margin-top: 10px;
+}
+
+.form .name input , .form .email input , .form .message textarea,.sendMessage {
+width: 90%;
+padding: 12px 5px; 
+border-radius: 10px;
+margin-bottom: 12px;
+background-color: var(--secondMainColor);
+color: var(--FirstMainColor);
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+}
+ input::placeholder,textarea::placeholder {
+    padding-left: 10px;
+font-weight: 500;
+} 
+input:focus , textarea:focus{
+    outline: none;
+border: 4px solid #2d6a4f;
+}
+.form .message textarea {
+    padding: 50px 0;
+}
+.sendMessage {
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+        background: linear-gradient(45deg, #fefae0, #f4c430, #dda15e);
+
+    color: var(--FirstMainColor);
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    
+}
+.sendMessage:hover{
+    background: linear-gradient(45deg, #dda15e, #fefae0, #f4c430);
+
+}
+.footerIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+.footerIcons a i {
+    font-size: 25px;
+    width: 25px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--FirstMainColor);
+    background-color: var(--thirdMainColor);
+}
+.footerIcons a i:hover{
+    font-size: 30px;
+    padding:15px ;
+}
+#discordFooter{
+font-size: 22px}
+footer  p {
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-size: 18px;
+
+}
