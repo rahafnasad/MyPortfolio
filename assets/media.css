@@ -1,0 +1,57 @@
+@media (max-width:1000px){
+    #mainPage .content {
+        flex-direction: column;
+    }
+    .about .content{
+        flex-direction: column;
+
+    }
+    .form {
+        width: 50%;
+    }
+   
+}
+@media (max-width:700px){
+    #mainPage nav {
+        flex-direction: column;
+}
+.skillsWithLogo {
+    flex-direction: column;
+    align-items: center;
+
+}
+.frontendSkills  , .bakendSkills ,.generalSkills,.frontPersantage,.project{
+    width: 85%;
+}
+.form {
+    width: 80%;
+}
+   
+}
+@media (max-width:620px){
+  
+   .resume button a{
+       font-size: 14px;
+}
+.resume button {
+    padding: 15px;
+}
+#mainPage .content h1 {
+    font-size: 24px;
+}
+#mainPage .content p {
+    font-size: 16px;
+}
+#mainPage .image img {
+    width: 85%;
+}
+.form {
+    width: 90%;
+}
+   
+}
+@media (max-width:475px){
+    .form {
+        width: 100%;
+    }
+}
