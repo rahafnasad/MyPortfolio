@@ -16,7 +16,79 @@
 }
 body {
     background-color: var(--secondMainColor);
+    overflow: hidden;
 }
+/* Add Loading Css*/
+.loading {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: var(--FirstMainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.loading span {
+    color: var(--secondMainColor);
+    font-family: "Dosis", sans-serif;
+letter-spacing: 1px ;
+font-size: 25px;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite
+  }
+  .loader::before , .loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    animation: prixClipFix 2s linear infinite ;
+  }
+  .loader::after{
+    border-color: #52b788;
+    animation: prixClipFix 2s linear infinite , rotate 0.5s linear infinite reverse;
+    inset: 6px;
+  }
+
+  @keyframes rotate {
+    0%   {transform: rotate(0deg)}
+    100%   {transform: rotate(360deg)}
+  }
+
+  @keyframes prixClipFix {
+      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+  }
+  .scrollToTop{
+    visibility: hidden;
+
+  }
+  .scrollToTop button {
+    background-color: var(--thirdMainColor);
+    color: var(--FirstMainColor);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+border: none;
+  }
 .container {
     margin: 15px 0;
     padding: 15px 50px;
@@ -28,13 +100,14 @@ body {
     background-color: var(--FirstMainColor);
     height: 100vh;
 }
-#mainPage .logo {
+ .logo {
     display: flex;
     align-items: center;
     opacity: 0;
     animation: slideRight 1s ease forwards;
+    margin-left: 30px;
 }
-#mainPage .logo img {
+ .logo img {
     width: 60px;
     height: 60px;
 }
@@ -43,7 +116,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
+#mainPage nav ul {
+    margin-right: 50px;
+}
+
 #mainPage nav li {
     display: inline;
     padding-left: 15px;
@@ -56,6 +136,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 #mainPage nav li a:hover,#mainPage nav a.active{
     color: #74c69d;
 }
@@ -77,6 +158,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-left: 70px;
+    margin-top: 70px;
 }
 #mainPage header {
  color: var(--secondMainColor);
@@ -129,8 +211,9 @@ animation-delay:0.7s ;
     text-decoration: none;
     color: var(--FirstMainColor);
     font-family: "Dosis", sans-serif;
-font-weight: 600;
-font-size: 16px;
+font-weight: 800;
+font-size: 17px;
+letter-spacing: 1px;
 
 }
 
@@ -296,7 +379,11 @@ width: 70%;
 display: flex;
 margin-left: 30px;
 align-items:start;
-flex-direction: column;        
+flex-direction: column;      
+border: 1px solid #1b4332;  
+padding: 30px 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px #1b4332;
     }
 .AboutInContent p{
 padding-bottom: 15px;
@@ -406,7 +493,7 @@ width: fit-content;
     margin-top: 30px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
+    padding: 30px 15px;
     border-radius: 10px;
     
 
