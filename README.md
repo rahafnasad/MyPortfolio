@@ -1,12 +1,12 @@
 
 # My MyPortfolio ✨
 This is a personal portfolio website created to showcase my skills, projects, and professional background. The website is built using HTML, CSS, and a bit of JavaScript to add interactivity and enhance the user experience📍.
-### Features 📋📌
+###📌  Features 📋
 - About: A brief introduction about myself, my background, and my professional journey.⚡️
 - Skills: A section highlighting the technical skills and tools I am proficient in.⚡️
 - Projects: A showcase of my key projects with descriptions and links to live demos or repositories.⚡️
 - Contact: A form and contact details for anyone who wishes to get in touch with me.⚡️
-  ### Technologies Used 📋📌
+  ### 📌 Technologies Used 📋
 - HTML: For structuring the content.⚡️
 - CSS: For styling and layout.⚡️
 - JavaScript: To add interactivity and enhance the user experience. ⚡️
@@ -20,6 +20,6 @@ This is a personal portfolio website created to showcase my skills, projects, an
 ![C](https://github.com/user-attachments/assets/083c0a66-ee15-4ab8-a142-1426b20e8ac6)
 ![Capture](https://github.com/user-attachments/assets/8d213e6e-4ef0-4ea3-8274-83c8c40ba7a0)
 
-### my portfolio live visiting🔗
+### 📌 my portfolio live visiting🔗
 https://rahafnasad.github.io/MyPortfolio/#Skills
 
