@@ -1,7 +1,7 @@
 
 # My MyPortfolio ✨
 This is a personal portfolio website created to showcase my skills, projects, and professional background. The website is built using HTML, CSS, and a bit of JavaScript to add interactivity and enhance the user experience📍.
-###📌  Features 📋
+### 📌  Features 📋
 - About: A brief introduction about myself, my background, and my professional journey.⚡️
 - Skills: A section highlighting the technical skills and tools I am proficient in.⚡️
 - Projects: A showcase of my key projects with descriptions and links to live demos or repositories.⚡️
