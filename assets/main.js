@@ -4,10 +4,11 @@ const loading = document.querySelector(".loading");
 const scrollToTop = document.querySelector(".scrollToTop");
 const mainPage = document.querySelector("#mainPage");
 const navList=document.querySelectorAll(".Navbar ul li a");
+const header = document.querySelector("header");
 console.log(navList);
 window.addEventListener('scroll' , function ()
 {
-    if (window.scrollY>Image.offsetTop){
+    if (window.scrollY>Image.offsetTop||window.scrollY>header.offsetTop){
         nav.style.backgroundColor="rgba(8, 28, 21,.9)";
     }
     else{
