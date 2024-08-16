@@ -12,28 +12,48 @@
     <link rel="stylesheet" href="assets/main.css" />
   </head>
   <body>
+    <!-- Add Loading -->
+     <div class="loading">
+      <span class="loader"></span>
+      <div class="logo">
+        <img
+          src="./assets/image/logo.png"
+          alt="my portfolio logo"
+          title="my portfolio logo"
+          width="500"
+          height="500"
+        />
+        <span>RAHAF HUSSEIN</span>
+      </div>
+
+     </div>
+     <!-- button scroll to top-->
+     <div class="scrollToTop">
+      <button><i class="fa-solid fa-arrow-up"></i></button>
+     </div>
     <!-- start main page-->
     <section id="mainPage">
+      <nav class="Navbar">
+        <div class="logo">
+          <img
+            src="./assets/image/logo.png"
+            alt="my portfolio logo"
+            title="my portfolio logo"
+            width="500"
+            height="500"
+          />
+          <span>RAHAF HUSSEIN</span>
+        </div>
+        <ul>
+          <li><a href="#mainPage" class="active" style="--i: 1">Home</a></li>
+          <li><a href="#About" style="--i: 2">About</a></li>
+          <li><a href="#Skills" style="--i: 3">Skills</a></li>
+          <li><a href="#Projects" style="--i: 4">Projects</a></li>
+          <li><a href="#Contact" style="--i: 5">Contact</a></li>
+        </ul>
+      </nav>
       <div class="container">
-        <nav>
-          <div class="logo">
-            <img
-              src="./assets/image/logo.png"
-              alt="my portfolio logo"
-              title="my portfolio logo"
-              width="500"
-              height="500"
-            />
-            <span>RAHAF HUSSEIN</span>
-          </div>
-          <ul>
-            <li><a href="#" class="active" style="--i: 1">Home</a></li>
-            <li><a href="#" style="--i: 2">About</a></li>
-            <li><a href="#" style="--i: 3">skills</a></li>
-            <li><a href="#" style="--i: 4">Projects</a></li>
-            <li><a href="#" style="--i: 5">Contact</a></li>
-          </ul>
-        </nav>
+        
 
         <div class="content">
           <div class="social-media">
@@ -67,6 +87,7 @@
                   target="_blank"
                 >
                   My Resume
+                  <i class="fa-solid fa-link"></i>
                 </a>
               </button>
             </div>
@@ -79,7 +100,7 @@
     </section>
     <!-- end main page-->
     <!--start about section-->
-    <section class="about">
+    <section class="about" id="About">
       <div class="container">
         <div class="title">
           <h1>About Me</h1>
@@ -101,14 +122,22 @@
             </p>
             <p>
               <i class="fa-brands fa-strava list"></i>
-              <span> University </span> Palestine Technical University -
-              Kadoorie
+              <span> Field : </span> Front-End Developer .
+            </p>
+            <p>
+              <i class="fa-brands fa-strava list"></i>
+              <span> University : </span> Palestine Technical University -
+              Kadoorie .
             </p>
             <p>
               <i class="fa-brands fa-strava list"></i>
               <span> University Major : </span> Computer Systems Engineering
+              2020 - 2024 .
             </p>
-
+            <p>
+              <i class="fa-brands fa-strava list"></i>
+              <span>Degree:</span> Bachelor's .
+            </p>
             <p>
               <i class="fa-brands fa-strava list"></i>
               <span>Country : </span> Palestine - Tulkarm .
@@ -117,10 +146,7 @@
               <i class="fa-brands fa-strava list"></i>
               <span>Languages : </span> English,Arabic .
             </p>
-            <p>
-              <i class="fa-brands fa-strava list"></i>
-              <span>Degree:</span> Bachelor's .
-            </p>
+           
             <p>
               <i class="fa-brands fa-strava list"></i
               ><span>ُEmail:</span> rahafnasad13@gmail.com .
@@ -135,7 +161,7 @@
     </section>
     <!--End About section-->
     <!--Start Skills Section-->
-    <section class="skills">
+    <section class="skills" id="Skills">
       <div class="container">
         <div class="title">
           <h1>Skills</h1>
@@ -264,7 +290,7 @@
     </section>
     <!--end Skills Section-->
     <!--Start Projects Section-->
-    <section class="projects">
+    <section class="projects" id="Projects">
       <div class="container">
         <div class="title titleProject">
           <h1>Projects</h1>
@@ -390,12 +416,12 @@
     </section>
     <!--End Projects Section-->
     <!--Start Contact Section-->
-    <section class="contact">
+    <section class="contact" id="Contact">
       <div class="container">
         <div class="title titleProject">
           <h1>Contact Me</h1>
         </div>
-        
+
         <div class="contentInContact">
           <div class="form">
             <form action="submit">
@@ -425,7 +451,9 @@
                   placeholder="Please write your message here."
                 ></textarea>
               </div>
-              <button class="sendMessage" >Send Message <i class="fa-solid fa-comments"></i></button>
+              <button class="sendMessage">
+                Send Message <i class="fa-solid fa-comments"></i>
+              </button>
             </form>
           </div>
         </div>
@@ -437,18 +465,23 @@
       <div class="container">
         <div class="footerIcons">
           <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-discord" id="discordFooter"></i></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-discord" id="discordFooter"></i
+          ></a>
           <a href="#" target="_blank"><i class="fa-brands fa-google"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
           <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-
-
         </div>
         <p>&copy; RAHAF HUSSEIN - 2024</p>
       </div>
     </footer>
-        <!--End Footer Section-->
-
+    <!--End Footer Section-->
+    <!-- Java Script-->
+     <script src="./assets/main.js"></script>
   </body>
 </html>
