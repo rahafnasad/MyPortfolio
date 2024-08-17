@@ -581,6 +581,7 @@ width: fit-content;
 .project{
     position: relative;
     width: 45%;
+    z-index: 0;
 }
 .project .overlay {
     position: absolute;
