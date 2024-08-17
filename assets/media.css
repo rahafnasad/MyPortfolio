@@ -50,8 +50,18 @@
 }
    
 }
+@media (max-width:540px){
+    .social-media {
+        justify-content: center;
+        height: 100%;
+    }
+}
 @media (max-width:475px){
     .form {
         width: 100%;
+    }
+    #mainPage nav li {
+     font-size: 14px;
+    
     }
 }

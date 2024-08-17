@@ -234,14 +234,17 @@ animation-delay:0.7s ;
     font-size: 22px;
 width: 35px;
 height: 35px;
-line-height: 35px;}
+line-height: 35px;
+}
 
 .social-media {
 display: flex;
 flex-direction: column;
 width: 10%;
 position: fixed;
-left: 20px;}
+left: 20px;
+
+}
 #gmail{
     color: red;
 background-color: #d8f3dc;
