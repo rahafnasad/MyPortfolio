@@ -21,5 +21,5 @@ This is a personal portfolio website created to showcase my skills, projects, an
 ![Capture](https://github.com/user-attachments/assets/8d213e6e-4ef0-4ea3-8274-83c8c40ba7a0)
 
 ### 📌 my portfolio live visiting🔗
-https://rahafnasad.github.io/MyPortfolio/#Skills
+https://rahafnasad.github.io/MyPortfolio/
 
