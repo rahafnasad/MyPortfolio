@@ -11,6 +11,15 @@ This is a personal portfolio website created to showcase my skills, projects, an
 - CSS: For styling and layout.⚡️
 - JavaScript: To add interactivity and enhance the user experience. ⚡️
 
+## 📌 How to Use
+
+- Clone the repository to your local machine.⭐️
+  
+     ```bash
+    git clone [https://github.com/rahafnasad/ToDoList_JS.git](https://github.com/rahafnasad/MyPortfolio.git)
+
+    ```
+- Open the index.html file in your web browser.⭐️
   
 ![11](https://github.com/user-attachments/assets/45714f88-aae0-4a91-9e1f-b174d42f9d3f)
 ![22](https://github.com/user-attachments/assets/7f3041a6-a69e-498b-ade6-d0e6c42bb93a)
