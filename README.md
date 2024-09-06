@@ -1,5 +1,5 @@
 
-# My MyPortfolio ✨
+# My Portfolio ✨
 This is a personal portfolio website created to showcase my skills, projects, and professional background. The website is built using HTML, CSS, and a bit of JavaScript to add interactivity and enhance the user experience📍.
 ###  📌  Features 📋
 - About: A brief introduction about myself, my background, and my professional journey.⚡️
