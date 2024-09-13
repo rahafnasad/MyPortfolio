@@ -4,6 +4,8 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+
 }
 :root {
     --FirstMainColor :#081c15 ;
@@ -129,6 +131,8 @@ border: none;
     display: inline;
     padding-left: 15px;
     letter-spacing: 2px;
+    font-family: "Dosis", sans-serif;
+
 
 }
 #mainPage nav span {
@@ -747,3 +751,6 @@ footer  p {
     font-size: 18px;
 
 }
+textarea {
+    text-align: left;
+    vertical-align: top;}

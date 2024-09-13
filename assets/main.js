@@ -41,6 +41,10 @@ window.scroll({
 
 navList.forEach(function(item) {
     item.addEventListener('click', function() {
+        document.querySelectorAll(".title").forEach(function(element) {
+            element.style.paddingTop = "40px";
+        });
+        
         navList.forEach(function(i) {
             i.classList.remove('active');
         });
