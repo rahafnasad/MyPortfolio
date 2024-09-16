@@ -29,7 +29,7 @@ window.addEventListener("load" , function (){
     this.setTimeout(function(){
         loading.style.visibility ="hidden";
         document.body.style.overflow="auto";
-    },2000)
+    },0)
 })
 scrollToTop.addEventListener("click",function(){
 window.scroll({

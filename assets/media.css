@@ -1,6 +1,28 @@
 @media (max-width:1000px){
+   
     #mainPage .content {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        margin: 0;
+        margin-top: 70px;
+        overflow: hidden;
+    }
+    #mainPage .content > *:not(.image ) {
+        width: 100%; 
+        box-sizing: border-box; 
+        margin: 10px 0; 
+    }
+    #mainPage .content h1 {
+        font-size: 35px;
+    }
+ 
+    #mainPage .content p {
+        font-size: 20px;
+        
+
     }
     .about .content{
         flex-direction: column;
@@ -14,6 +36,19 @@
 @media (max-width:700px){
     #mainPage nav {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 ;
+}
+#mainPage .content{
+    margin-top: 100px;
+}
+.logo{
+    margin:8px 0;
+}
+.logo img {
+    width: 30px;
+    height: 30px;
 }
 .skillsWithLogo {
     flex-direction: column;
@@ -29,9 +64,19 @@
    
 }
 @media (max-width:620px){
+    #mainPage .image {
+       display: flex;
+       justify-content: center;
+    }
   
+    .resume button{
+        width: 50%;
+    }
    .resume button a{
        font-size: 14px;
+       padding: 3px ;
+
+       
 }
 .resume button {
     padding: 15px;

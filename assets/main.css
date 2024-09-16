@@ -202,17 +202,20 @@ text-align: center;
 .resume button {
     background: linear-gradient(45deg, #fefae0, #f4c430, #dda15e);
     border: none;
-   padding: 15px 50px;
+   padding: 0;
    border-radius: 10px;
 margin: 30px auto; 
 box-shadow: 0 0 10px #52b788;
 opacity: 0;
 animation: slideBottom 0.5s ease forwards;
 animation-delay:0.7s ;
+overflow: hidden;
 
 }
 
 .resume  button a {
+    display: block; 
+    padding: 15px 50px;
     text-decoration: none;
     color: var(--FirstMainColor);
     font-family: "Dosis", sans-serif;
