@@ -16,6 +16,9 @@
     background-color: var(--secondMainColor);
     color: var(--FirstMainColor);
 }
+ul {
+    list-style: none;
+}
 body {
     background-color: var(--secondMainColor);
     overflow: hidden;
