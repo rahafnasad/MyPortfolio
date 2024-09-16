@@ -114,20 +114,22 @@ border: none;
     width: 60px;
     height: 60px;
 }
-#mainPage nav {
+#mainPage header nav {
     color: var(--secondMainColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 2;
 }
-#mainPage nav ul {
+#mainPage header nav ul {
     margin-right: 50px;
 }
 
-#mainPage nav li {
+#mainPage header nav li {
     display: inline;
     padding-left: 15px;
     letter-spacing: 2px;
@@ -142,7 +144,7 @@ border: none;
     font-style: normal;
 }
 
-#mainPage nav li a:hover,#mainPage nav a.active{
+#mainPage header nav li a:hover,#mainPage header nav a.active{
     color: #74c69d;
 }
 #mainPage nav a.active{
