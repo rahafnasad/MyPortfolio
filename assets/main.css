@@ -441,35 +441,39 @@ margin-left: 30px;
     font-family: "Raleway", sans-serif;
 
 }
-.skillsWithLogo {
+.skillsWithLogo ul {
     display: flex;
+    justify-content: center;
 }
 .logoSkills {
     width:60px;
     height: 60px;
     margin-top: 15px;
 }
-.logoSkills:hover{
-    width:70px;
-    height: 70px;
-}
+
 .frontendSkills  , .bakendSkills ,.generalSkills {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-padding: 30px 20px;
+padding: 15px;
 margin-bottom: 15px;
 margin-left: 20px;
-width: 30%;
 margin-top: 30px;
+width: 300px;
+height: 160px;
 }
-.frontendSkills p , .bakendSkills p,.generalSkills p {
+.frontendSkills h4 , .bakendSkills h4,.generalSkills h4{
     color: var(--thirdMainColor);
-    font-weight: 700;
     letter-spacing: 1px;
     padding-bottom: 10px ;
     border-bottom: 1px solid var(--FirstMainColor);
+    font-size: 20px ;
+    font-family: "Dosis", sans-serif;
+margin-top: 10px;
+font-weight: 500;
 }
+
+
 #githubskills {
     border-radius: 50%;
 }
@@ -487,12 +491,16 @@ background-color: var(--secondMainColor);
 height: 3px;
 background-color: var(--thirdMainColor);
 }
-.allProjects{
+.allProjects ul{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
     justify-content: center;
+    align-items: center;
 
+}
+.allProjects ul li{
+    width: 50%;
 }
 .skills h3,.projects h3 {
     border-bottom: 1px solid var(--thirdMainColor);
@@ -572,9 +580,9 @@ width: fit-content;
 .bar[percentage="85%"]::after{
     width: 85%;
 }
-.item h4 {
+.item h5 {
     font-family: "Raleway", sans-serif;
-
+font-weight: 500;
 }
 
 .TitleAndPercentage{
@@ -595,8 +603,9 @@ width: fit-content;
     }
 .project{
     position: relative;
-    width: 45%;
+    width: 89%;
     z-index: 0;
+    margin: 15px;
 }
 .project .overlay {
     position: absolute;
@@ -685,34 +694,39 @@ border: 3px solid var(--secondMainColor);
 .form {
 width: 40%;
 border-radius: 10px;
-padding: 20px 0;
+padding: 20px 5px;
 border: 1px solid var(--secondMainColor);
 box-shadow: 0 0 10px var(--thirdMainColor);
 margin-top: 10px;
+
 }
 
 .form .name input , .form .email input , .form .message textarea,.sendMessage {
 width: 90%;
-padding: 12px 5px; 
+padding: 12px 10px !important; 
 border-radius: 10px;
 margin-bottom: 12px;
 background-color: var(--secondMainColor);
 color: var(--FirstMainColor);
 font-family: "Raleway", sans-serif;
 font-weight: 700;
+box-sizing: border-box;
+border: transparent;
+font-weight: 600;
 }
- input::placeholder,textarea::placeholder {
-    padding-left: 10px;
-font-weight: 500;
-} 
+
 input:focus , textarea:focus{
     outline: none;
-border: 4px solid #2d6a4f;
-}
+    box-shadow: 0 0 5px rgba(145, 255, 169, 0.5);}
 .form .message textarea {
     padding: 50px 0;
 }
+.send{
+    display: flex;
+    justify-content: center;
+}
 .sendMessage {
+    width: 50%;
     margin: 15px;
     cursor: pointer;
     border: none;
@@ -728,7 +742,7 @@ border: 4px solid #2d6a4f;
     background: linear-gradient(45deg, #dda15e, #fefae0, #f4c430);
 
 }
-.footerIcons {
+.footerIcons ul{
     display: flex;
     justify-content: center;
     gap: 10px;

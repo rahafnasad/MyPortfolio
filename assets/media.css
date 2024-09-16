@@ -24,6 +24,15 @@
         
 
     }
+    .allProjects ul {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .allProjects ul li{
+        width: 100%;
+display: flex;
+justify-content: center;    }
     .about .content{
         flex-direction: column;
 
@@ -31,7 +40,26 @@
     .form {
         width: 50%;
     }
-   
+    .skillsWithLogo  ul{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .frontendSkills  , .bakendSkills ,.generalSkills {
+        width: 500px;
+        height: 180px;
+        box-sizing: border-box;
+    }
+    .frontPersantage{
+        width: 500px;
+
+    }
+    .frontendSkills ul  , .bakendSkills ul,.generalSkills ul{
+display: flex;
+gap: 5px;
+flex-direction: row;
+    }
+
 }
 @media (max-width:700px){
     #mainPage nav {
@@ -50,14 +78,8 @@
     width: 30px;
     height: 30px;
 }
-.skillsWithLogo {
-    flex-direction: column;
-    align-items: center;
 
-}
-.frontendSkills  , .bakendSkills ,.generalSkills,.frontPersantage,.project{
-    width: 85%;
-}
+
 .form {
     width: 80%;
 }
@@ -95,10 +117,22 @@
 }
    
 }
+@media (max-width:560px){
+    .frontendSkills  , .bakendSkills ,.generalSkills {
+        width: 360px;
+        height: 160px;
+        box-sizing: border-box;
+    }
+    .frontPersantage{
+        width: 360px;
+
+    }
+}
 @media (max-width:540px){
     .social-media {
         justify-content: center;
         height: 100%;
+        
     }
 }
 @media (max-width:475px){
@@ -109,4 +143,19 @@
      font-size: 14px;
     
     }
+}
+@media (max-width:410px){
+    .frontendSkills  , .bakendSkills ,.generalSkills {
+        width:250px;
+        height: 250px;
+        box-sizing: border-box;
+    }
+    .frontendSkills ul  , .bakendSkills ul,.generalSkills ul{
+        flex-wrap: wrap;
+    }
+    .frontPersantage{
+        width: 250px;
+
+    }
+    
 }
